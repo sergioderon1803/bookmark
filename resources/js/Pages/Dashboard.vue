@@ -1,30 +1,24 @@
 <script setup>
-import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head } from '@inertiajs/vue3';
+import BaseLayout from '@/Layouts/AuthenticatedLayout.vue'
+import { Head } from '@inertiajs/vue3'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 </script>
 
 <template>
-    <Head title="Dashboard" />
+  <Head :title="t('admin.panel_title')" />
 
-    <AuthenticatedLayout>
-        <template #header>
-            <h2
-                class="text-xl font-semibold leading-tight text-gray-800"
-            >
-                Dashboard
-            </h2>
-        </template>
+  <BaseLayout>
+    <h1 class="text-3xl font-bold mb-6">{{ t('admin.panel_title') }}</h1>
 
-        <div class="py-12">
-            <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-                <div
-                    class="overflow-hidden bg-white shadow-sm sm:rounded-lg"
-                >
-                    <div class="p-6 text-gray-900">
-                        You're logged in!
-                    </div>
-                </div>
-            </div>
-        </div>
-    </AuthenticatedLayout>
+    <nav class="flex flex-col gap-4">
+      <Link href="/admin/users" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+        {{ t('admin.manage_users') }}
+      </Link>
+      <Link href="/admin/books" class="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">
+        {{ t('admin.manage_books') }}
+      </Link>
+    </nav>
+  </BaseLayout>
 </template>

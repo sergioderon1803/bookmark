@@ -1,0 +1,70 @@
+{
+  "app_name": "Bookmark",
+  "language": "Idioma",
+  "actions": "Acciones",
+  "edit": "Editar",
+  "delete": "Eliminar",
+  "cancel": "Cancelar",
+  "login": "Iniciar sesión",
+  "register": "Registrarse",
+  "logout": "Cerrar sesión",
+  "name": "Nombre",
+  "email": "Correo electrónico",
+  "password": "Contraseña",
+  "role": "Rol",
+  "app_rights": "Todos los derechos reservados",
+  "profile_edit": "Editar perfil",
+
+  "welcome": {
+    "title": "Bienvenido a Bookmark",
+    "dashboard": "Ir al Panel",
+    "intro": {
+      "1": "Bienvenido a",
+      "2": "la comunidad donde los amantes de la lectura pueden registrar, calificar y descubrir libros, compartir reseñas y conectar con otros lectores."
+    },
+    "track_title": "Lleva el registro de tus lecturas",
+    "track_desc": "Añade libros a tu biblioteca personal, marca los que has leído, los que quieres leer y lleva un seguimiento de tu progreso lector.",
+    "discover_title": "Descubre y comparte",
+    "discover_desc": "Explora reseñas y valoraciones de otros lectores, comparte tus opiniones y encuentra tu próxima lectura favorita.",
+    "lists_title": "Listas y retos lectores",
+    "lists_desc": "Crea listas personalizadas, participa en retos de lectura y comparte tus logros con la comunidad.",
+    "community_title": "Únete a la comunidad",
+    "community_desc": "Sigue a otros lectores, comenta en sus reseñas y forma parte de una comunidad apasionada por los libros."
+  },
+
+  "admin": {
+    "users_title": "Usuarios",
+    "back_to_dashboard": "Volver al Panel",
+    "panel_title": "Panel de administración",
+    "create_user": "Crear usuario",
+    "edit_user": "Editar usuario",
+    "update_user": "Actualizar usuario",
+    "back_to_list": "Volver a la lista",
+    "user_name": "Nombre",
+    "user_email": "Correo electrónico",
+    "user_role": "Rol",
+    "books_title": "Libros",
+    "create_book": "Crear libro",
+    "edit_book": "Editar libro",
+    "book_title": "Título",
+    "book_author": "Autor",
+    "select_author": "Seleccionar autor",
+    "book_published_year": "Año de publicación",
+    "confirm_delete_user": "¿Estás seguro de que deseas eliminar este usuario?",
+    "menu_books": "Libros",
+    "menu_users": "Usuarios",
+    "menu_home": "Inicio",
+    "roles": {
+      "user": "Usuario",
+      "admin": "Administrador"
+    },
+    "password_optional": "Contraseña (dejar en blanco para no cambiar)",
+    "password_confirmation": "Confirmar contraseña",
+    "swal": {
+      "user_deleted": "Usuario eliminado",
+      "confirm_delete_user": "¿Estás seguro de que deseas eliminar este usuario?",
+      "confirm_delete_book": "¿Seguro que quieres eliminar este libro?",
+      "book_deleted": "Libro eliminado"
+    }
+  }
+}
