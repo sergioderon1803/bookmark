@@ -1,8 +1,8 @@
 <script setup>
 import { Head } from '@inertiajs/vue3'
 import { useI18n } from 'vue-i18n'
-import Header from '@/Layouts/Partials/Header.vue'
-import Footer from '@/Layouts/Partials/Footer.vue'
+import Header from '@/Layouts/Partials/Authenticated/Header.vue'
+import Footer from '@/Layouts/Partials/Authenticated/Footer.vue'
 
 const { t } = useI18n()
 </script>

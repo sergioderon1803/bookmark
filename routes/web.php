@@ -21,8 +21,13 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-
+// Rutas del administración
 Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->group(function () {
+
+    // Panel de administración
+    Route::get('/', function () {
+        return Inertia::render('Admin/Dashboard');
+    })->name('dashboard');
 
     // Usuarios
     Route::get('/users', [UserController::class, 'index'])->name('users.index');

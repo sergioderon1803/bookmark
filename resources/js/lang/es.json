@@ -5,6 +5,8 @@
   "edit": "Editar",
   "delete": "Eliminar",
   "cancel": "Cancelar",
+  "save": "Guardar",
+  "back": "Volver",
   "login": "Iniciar sesión",
   "register": "Registrarse",
   "logout": "Cerrar sesión",
@@ -14,6 +16,7 @@
   "role": "Rol",
   "app_rights": "Todos los derechos reservados",
   "profile_edit": "Editar perfil",
+  "back_to_dashboard": "Volver al panel de control",
 
   "welcome": {
     "title": "Bienvenido a Bookmark",
@@ -30,6 +33,12 @@
     "lists_desc": "Crea listas personalizadas, participa en retos de lectura y comparte tus logros con la comunidad.",
     "community_title": "Únete a la comunidad",
     "community_desc": "Sigue a otros lectores, comenta en sus reseñas y forma parte de una comunidad apasionada por los libros."
+  },
+
+  "dashboard": {
+    "title": "Panel de control",
+    "panel_title": "Panel de control",
+    "welcome": "Bienvenido al panel de control"
   },
 
   "admin": {
@@ -54,6 +63,15 @@
     "menu_books": "Libros",
     "menu_users": "Usuarios",
     "menu_home": "Inicio",
+    "welcome": "Bienvenido al panel de administración",
+    "manage_users": "Gestionar usuarios",
+    "users_description": "Añade, edita o elimina usuarios del sistema.",
+    "go_to_users": "Ir a usuarios",
+    "manage_books": "Gestionar libros",
+    "books_description": "Administra el catálogo de libros.",
+    "go_to_books": "Ir a libros",
+    "more_sections": "Más secciones",
+    "more_coming_soon": "Próximamente más herramientas de administración.",
     "roles": {
       "user": "Usuario",
       "admin": "Administrador"
