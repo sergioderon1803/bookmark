@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\Admin\AuthorController;
 use App\Http\Controllers\Admin\BookController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
@@ -14,8 +15,11 @@ Route::get('/', function () {
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
-});
+})->name('welcome');
 
+Route::get('/components-preview', function () {
+    return Inertia::render('ComponentsPreview');
+});
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
@@ -36,6 +40,14 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->grou
     Route::get('/users/{user}/edit', [UserController::class, 'edit'])->name('users.edit');
     Route::put('/users/{user}', [UserController::class, 'update'])->name('users.update');
     Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('users.destroy');
+
+    // Autores
+    Route::get('/authors', [AuthorController::class, 'index'])->name('authors.index');
+    Route::get('/authors/create', [AuthorController::class, 'create'])->name('authors.create');
+    Route::post('/authors', [AuthorController::class, 'store'])->name('authors.store');
+    Route::get('/authors/{author}/edit', [AuthorController::class, 'edit'])->name('authors.edit');
+    Route::put('/authors/{author}', [AuthorController::class, 'update'])->name('authors.update');
+    Route::delete('/authors/{author}', [AuthorController::class, 'destroy'])->name('authors.destroy');
 
     // Libros
     Route::resource('books', BookController::class)->except(['show']);

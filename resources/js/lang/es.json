@@ -13,11 +13,11 @@
   "name": "Nombre",
   "email": "Correo electrónico",
   "password": "Contraseña",
+  "password_confirmation": "Confirmar contraseña",
   "role": "Rol",
   "app_rights": "Todos los derechos reservados",
   "profile_edit": "Editar perfil",
   "back_to_dashboard": "Volver al panel de control",
-
   "welcome": {
     "title": "Bienvenido a Bookmark",
     "dashboard": "Ir al Panel",
@@ -34,13 +34,11 @@
     "community_title": "Únete a la comunidad",
     "community_desc": "Sigue a otros lectores, comenta en sus reseñas y forma parte de una comunidad apasionada por los libros."
   },
-
   "dashboard": {
     "title": "Panel de control",
     "panel_title": "Panel de control",
     "welcome": "Bienvenido al panel de control"
   },
-
   "admin": {
     "users_title": "Usuarios",
     "back_to_dashboard": "Volver al Panel",
@@ -49,16 +47,26 @@
     "edit_user": "Editar usuario",
     "update_user": "Actualizar usuario",
     "back_to_list": "Volver a la lista",
+    "user_id": "ID del usuario",
     "user_name": "Nombre",
     "user_email": "Correo electrónico",
     "user_role": "Rol",
+    "book_id": "ID del libro",
     "books_title": "Libros",
+    "authors_title": "Autores",
     "create_book": "Crear libro",
+    "update_book": "Actualizar libro",
     "edit_book": "Editar libro",
     "book_title": "Título",
     "book_author": "Autor",
     "select_author": "Seleccionar autor",
     "book_published_year": "Año de publicación",
+    "author_id": "ID del autor",
+    "author_name": "Nombre del autor",
+    "author_biography": "Biografía del autor",
+    "edit_author": "Editar autor",
+    "update_author": "Actualizar autor",
+    "create_author": "Crear autor",
     "confirm_delete_user": "¿Estás seguro de que deseas eliminar este usuario?",
     "menu_books": "Libros",
     "menu_users": "Usuarios",
@@ -77,12 +85,34 @@
       "admin": "Administrador"
     },
     "password_optional": "Contraseña (dejar en blanco para no cambiar)",
-    "password_confirmation": "Confirmar contraseña",
     "swal": {
-      "user_deleted": "Usuario eliminado",
       "confirm_delete_user": "¿Estás seguro de que deseas eliminar este usuario?",
       "confirm_delete_book": "¿Seguro que quieres eliminar este libro?",
-      "book_deleted": "Libro eliminado"
+      "confirm_delete_author": "¿Seguro que quieres eliminar este autor?",
+      "user_deleted": "Usuario eliminado",
+      "book_deleted": "Libro eliminado",
+      "author_deleted": "Autor eliminado"
     }
+  },
+  "profile": {
+    "title": "Editar Perfil",
+    "info": "Información del perfil",
+    "info_description": "Actualiza tu nombre y correo electrónico.",
+    "email_unverified": "Tu correo electrónico no está verificado.",
+    "resend_verification": "Haz clic aquí para reenviar el correo de verificación.",
+    "verification_sent": "Se ha enviado un nuevo enlace de verificación a tu correo electrónico.",
+    "update_password": "Cambiar contraseña",
+    "update_password_description": "Asegúrate de usar una contraseña segura y difícil de adivinar.",
+    "delete_account": "Eliminar cuenta",
+    "delete_account_description": "Una vez eliminada, toda la información se perderá permanentemente.",
+    "delete_account_confirm": "¿Estás seguro de que quieres eliminar tu cuenta?",
+    "delete_account_confirm_description": "Introduce tu contraseña para confirmar. Esta acción no se puede deshacer.",
+    "email": "Correo electrónico",
+    "name": "Nombre",
+    "save": "Guardar",
+    "saved": "Información guardada.",
+    "current_password": "Contraseña actual",
+    "new_password": "Nueva contraseña",
+    "confirm_password": "Confirmar contraseña"
   }
 }

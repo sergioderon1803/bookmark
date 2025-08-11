@@ -48,6 +48,7 @@ async function confirmDelete(id) {
     <table class="w-full table-auto border-collapse border border-gray-300">
       <thead>
         <tr class="bg-gray-100">
+          <th class="border border-gray-300 px-4 py-2">{{ t('admin.user_id') }}</th>
           <th class="border border-gray-300 px-4 py-2">{{ t('admin.user_name') }}</th>
           <th class="border border-gray-300 px-4 py-2">{{ t('admin.user_email') }}</th>
           <th class="border border-gray-300 px-4 py-2">{{ t('admin.user_role') }}</th>
@@ -56,6 +57,7 @@ async function confirmDelete(id) {
       </thead>
       <tbody>
         <tr v-for="user in users" :key="user.id" class="hover:bg-gray-50">
+          <td class="border border-gray-300 px-4 py-2">{{ user.id }}</td>
           <td class="border border-gray-300 px-4 py-2">{{ user.name }}</td>
           <td class="border border-gray-300 px-4 py-2">{{ user.email }}</td>
           <td class="border border-gray-300 px-4 py-2">{{ user.role }}</td>

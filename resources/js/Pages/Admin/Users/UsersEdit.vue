@@ -39,21 +39,21 @@ const submit = () => {
 
             <form @submit.prevent="submit" novalidate>
                 <div class="mb-4">
-                    <label class="block mb-1 font-semibold" for="name">{{ t('admin.name') }}</label>
+                    <label class="block mb-1 font-semibold" for="name">{{ t('admin.user_name') }}</label>
                     <input id="name" type="text" v-model="form.name" class="w-full border p-2 rounded"
                         autocomplete="name" />
                     <div v-if="form.errors.name" class="text-red-600 mt-1">{{ form.errors.name }}</div>
                 </div>
 
                 <div class="mb-4">
-                    <label class="block mb-1 font-semibold" for="email">{{ t('admin.email') }}</label>
+                    <label class="block mb-1 font-semibold" for="email">{{ t('admin.user_email') }}</label>
                     <input id="email" type="email" v-model="form.email" class="w-full border p-2 rounded"
                         autocomplete="email" />
                     <div v-if="form.errors.email" class="text-red-600 mt-1">{{ form.errors.email }}</div>
                 </div>
 
                 <div class="mb-4">
-                    <label class="block mb-1 font-semibold" for="role">{{ t('admin.role') }}</label>
+                    <label class="block mb-1 font-semibold" for="role">{{ t('admin.user_role') }}</label>
                     <select id="role" v-model="form.role" class="w-full border p-2 rounded">
                         <option value="user">{{ t('admin.roles.user') }}</option>
                         <option value="admin">{{ t('admin.roles.admin') }}</option>
@@ -70,7 +70,7 @@ const submit = () => {
 
                 <div class="mb-4">
                     <label class="block mb-1 font-semibold" for="password_confirmation">{{
-                        t('admin.password_confirmation')
+                        t('password_confirmation')
                         }}</label>
                     <input id="password_confirmation" type="password" v-model="form.password_confirmation"
                         class="w-full border p-2 rounded" autocomplete="new-password" />

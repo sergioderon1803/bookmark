@@ -48,6 +48,7 @@ async function confirmDelete(id) {
         <table class="w-full table-auto border-collapse border border-gray-300">
             <thead>
                 <tr class="bg-gray-100">
+                    <th class="border border-gray-300 px-4 py-2">{{ t('admin.book_id') }}</th>
                     <th class="border border-gray-300 px-4 py-2">{{ t('admin.book_title') }}</th>
                     <th class="border border-gray-300 px-4 py-2">{{ t('admin.book_author') }}</th>
                     <th class="border border-gray-300 px-4 py-2">{{ t('admin.book_published_year') }}</th>
@@ -56,12 +57,13 @@ async function confirmDelete(id) {
             </thead>
             <tbody>
                 <tr v-for="book in books" :key="book.id" class="hover:bg-gray-50">
+                    <td class="border border-gray-300 px-4 py-2">{{ book.id }}</td>
                     <td class="border border-gray-300 px-4 py-2">{{ book.title }}</td>
-                    <td class="border border-gray-300 px-4 py-2">{{ book.author || '-' }}</td>
+                    <td class="border border-gray-300 px-4 py-2">{{ book.author.name || '-' }}</td>
                     <td class="border border-gray-300 px-4 py-2">{{ book.published_year || '-' }}</td>
                     <td class="border border-gray-300 px-4 py-2">
                         <Link :href="`/admin/books/${book.id}/edit`" class="text-blue-600 hover:underline mr-2">
-                        {{ t('admin.edit') }}
+                        {{ t('edit') }}
                         </Link>
                         <button @click="confirmDelete(book.id)" class="text-red-600 hover:underline">
                             {{ t('delete') }}

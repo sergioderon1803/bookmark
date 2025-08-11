@@ -17,6 +17,9 @@ const { t } = useI18n()
             <Link href="/admin/books" class="px-3 py-2 rounded hover:bg-gray-100">
             {{ t('admin.books_title') }}
             </Link>
+            <Link href="/admin/authors" class="px-3 py-2 rounded hover:bg-gray-100">
+            {{ t('admin.authors_title') }}
+            </Link>
         </nav>
     </aside>
 </template>
